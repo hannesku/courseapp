@@ -27,19 +27,19 @@ public class DataInitializer {
         }
 
         User initialUser01 = new User();
-        initialUser01.setUsernamen("maxmustermann");
+        initialUser01.setUsername("maxmustermann");
         initialUser01.setPassword("pwmax");
         initialUser01.setEmail("max.mustermann@gmail.com");
         this.userRepository.save(initialUser01);
 
         User initialUser02 = new User();
-        initialUser02.setUsernamen("erikamusterfrau");
+        initialUser02.setUsername("erikamusterfrau");
         initialUser02.setPassword("pwerika");
         initialUser02.setEmail("erika.musterfrau@gmail.at");
         this.userRepository.save(initialUser02);
 
         User initialUser03 = new User();
-        initialUser03.setUsernamen("wissensdurst");
+        initialUser03.setUsername("wissensdurst");
         initialUser03.setPassword("pwwissen");
         initialUser03.setEmail("wissendsdurst@gmx.net");
         this.userRepository.save(initialUser03);

@@ -6,7 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name= "TB_User")
+@Table(name= "TB_USER")
 public class User {
     @Id
     @GeneratedValue(generator = "user-sequence-generator")
@@ -22,7 +22,7 @@ public class User {
     private long id;
 
     @Column(nullable = false, unique = true)
-    private String usernamen;
+    private String username;
 
     @Column
     private String password;
@@ -33,18 +33,22 @@ public class User {
     public User() {
     }
 
-    public User(String usernamen, String password, String email) {
-        this.usernamen = usernamen;
+    public User(String username, String password, String email) {
+        this.username = username;
         this.password = password;
         this.email = email;
     }
 
-    public String getUsernamen() {
-        return usernamen;
+    public long getId() {
+        return id;
     }
 
-    public void setUsernamen(String usernamen) {
-        this.usernamen = usernamen;
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
